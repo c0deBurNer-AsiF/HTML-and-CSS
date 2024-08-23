@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Feedback Form</title>
+    <style>
+        body{
+            background-color:rgb(185, 192, 195);
+        }
+        form{
+            width:100%;
+            overflow-x:hidden;
+        }
+        #div1{
+            display:inline;
+            position:relative;
+            left:25%;
+            margin-right:20px;
+            
+        }
+        #div2{
+            display:inline;
+            position:relative;
+            left:25%;            
+        }
+        #fixedbar{
+            height:50px;
+            background-color:black;
+            color:antiquewhite;
+            text-align:center;
+            margin-bottom:100px;
+        
+        
+        }
+       
+        #div3{
+            position:relative;
+            left:25%;
+        }
+        #div4{
+            position:relative;
+            left:25%;
+
+        }
+        #h4{
+            margin-bottom:1px;
+        }
+        #comment_box{
+            width:600px;
+            height:100px;
+        }
+        h2{
+            margin:0%;
+            position:relative;
+            top:10px;
+        }
+        .label_class{
+            font-size:xx-large
+            
+        }
+        .label_class:hover{
+            color:rgb(243, 181, 24);
+        }
+        #comment_box:focus{
+            background-color:rgb(153, 186, 190);
+        }
+
+        #course_name{
+            background-color:black;
+            color:white;
+            margin:1px;
+            
+        }
+        #Instructor_Name{
+            background-color:black;
+            color:white;
+        }
+        .label{
+            font-weight:bold;
+            font-size:large;
+            word-spacing:2px;
+            letter-spacing:.2px;
+        }
+        #submit_button{
+            position:relative;
+            left:25%;
+            width:80px;
+            height:40px;
+            background-color:black;
+            color:white;
+            font-weight:bold;
+
+        }
+        #submit_button:hover{
+            background-color:rgb(78, 7, 7);
+        }
+        #course_name:hover{
+            background-color:rgb(77, 60, 60);
+        }
+        #Instructor_Name:hover{
+            background-color:rgb(77, 60, 60);
+        }
+    </style>
+</head>
+<body>
+    <form action="file:///C:/Users/tapan/OneDrive/Documents/HTML_vs%20code/Projects/Project_3/Project_3.html">
+        <div id="fixedbar"><h2>Customer Feedback Form</h2></div>
+        <div id="div1">
+            <label for="course_name" class="label">Select Course Name</label>
+            <select name="Course Name" id="course_name">
+                <option value="1">Python for Beginners</option>
+                <option value="2">C,C++,DSA,STL</option>
+                <option value="3">C for Beginners</option>
+                <option value="4">STL for Beginners</option>
+                <option value="5">Python for Beginners</option>
+            </select>
+        </div>
+    
+        <div id="div2">
+            <label for="Instructor_Name" class="label">Select your instructur Name</label>
+            <select name="Instructor Name" id="Instructor_Name">
+                <option value="1">Sourabh Sukla</option>
+                <option value="2">Asif ali Sahaji</option>
+                <option value="3">Tania Parvin</option>
+                <option value="4">Basir Ali Sahaji</option>
+                <option value="5">Tuhina Sahaji</option>
+                <option value="6">Nilufa Yasmin</option>
+            </select>
+        </div>
+        
+        <div id="div3">
+            <h1 id="rate_us_text">Rate Us</h1>
+            <h3 id="msg">Hii,Share Your exprience</h3>
+            <label class="label_class" for="star5">★<input required type="radio" name="rating" value="5" id="star5"></label>
+            <label class="label_class" for="star4">★<input required type="radio" name="rating" value="4" id="star4"></label>
+            <label class="label_class" for="star3">★<input required type="radio" name="rating" value="3" id="star3"></label>
+            <label class="label_class" for="star2">★<input required type="radio" name="rating" value="2" id="star2"></label>
+            <label class="label_class" for="star1">★<input required type="radio" name="rating" value="1" id="star1"></label>
+        </div> 
+
+
+        <div id="div4">
+            <h4 id="h4">Write Review</h4>
+            <textarea required name="comment" id="comment_box" width=""></textarea>
+        </div>
+
+        <div>
+            <input type="submit" name="submit" value="Submit" id="submit_button">
+        </div>
+        
+
+    </form>
+</body>
+</html>
