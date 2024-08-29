@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form Craft</title>
+    <link rel="stylesheet" href="Project_8.css">
+</head>
+<body>
+    <div id="heading1">
+        Form Craft
+    </div>
+
+    <div id="div1">
+        <form action="https://www.google.com" id="form" method="get" onsubmit="return validate()">
+            <div class="div2">Name:</div>
+            <input id="name" class="box" type="text" name="username" placeholder="abcd">
+            <br>
+            <div id="gender">
+                Male<input required type="radio" name="gender">
+                Female<input required type="radio" name="gender">
+            </div>
+            <br>
+            <div class="div2">Enter your Number:</div>
+            <input  id="number" class="box" type="number" name="number" placeholder="0123456789">
+            <br>
+            <div class="div2">Enter your Email:</div>
+            <input  id="email" class="box" type="email" name="email" placeholder="abcd@gmail.com">
+            <br>
+            <div class="div2">Enter Password</div>
+            <input id="password" class="box" type="password" name="password" placeholder="aB12@12">
+            <br>
+            <div id="ok"><input  id="box2" type="checkbox" name="confirm"> agree that your all document should be right</div>
+            <br>
+            <input type="Submit" value="Submit" id="button">
+
+        </form>
+    </div>
+    <script src="Project_8.js"> </script>
+</body>
+</html>
